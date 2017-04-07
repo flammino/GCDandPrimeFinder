@@ -151,7 +151,8 @@ public class Main extends Application {
             Alert exit = new Alert(Alert.AlertType.CONFIRMATION);
             exit.setTitle("Goodbye!");
             exit.setContentText("Really quit?");
-            Optional<ButtonType> result = exit.showAndWait(); // Confirmation dialog method from https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/
+            Optional<ButtonType> result = exit.showAndWait(); /* Confirmation dialog method from 
+            https://examples.javacodegeeks.com/desktop-java/javafx/dialog-javafx/javafx-dialog-example/ */
             if ((result.isPresent()) && (result.get() == ButtonType.OK))
             System.exit(0);
         });
